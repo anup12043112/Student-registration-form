@@ -22,7 +22,7 @@ class RegisterationForm(models.Model):
     department = models.CharField(max_length=100)
     email = models.EmailField()
     course = models.CharField(max_length=100)
-    number = models.IntegerField()
+    number = models.CharField(max_length=15)
     dob = models.DateField()
     address = models.CharField()
     gender = models.CharField()
